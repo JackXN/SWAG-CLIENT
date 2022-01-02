@@ -14,7 +14,7 @@ const Container = styled.div`
 
 
 const BASE_URL = process.env.REACT_APP_API_BASE_URL;
-
+// const BASE_URL = 'http://localhost:5000'
 const Products = ({ cat, filters, sort }) => {
   const [products, setProducts] = useState([]);
   const [filteredProducts, setFilteredProducts] = useState([]);
