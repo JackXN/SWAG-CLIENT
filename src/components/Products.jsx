@@ -11,6 +11,10 @@ const Container = styled.div`
   justify-content: space-between;
 `;
 
+
+
+const BASE_URL = process.env.REACT_APP_API_BASE_URL;
+
 const Products = ({ cat, filters, sort }) => {
   const [products, setProducts] = useState([]);
   const [filteredProducts, setFilteredProducts] = useState([]);
@@ -20,8 +24,9 @@ const Products = ({ cat, filters, sort }) => {
       try {
         const res = await axios.get(
           cat
-            ? `http://localhost:5000/api/products?category=${cat}`
-            : "http://localhost:5000/api/products"
+            ? `${BASE_URL}/api/products?category=${cat}`
+            : `${BASE_URL}/api/products`
+              
         );
         setProducts(res.data);
       } catch (err) {}
