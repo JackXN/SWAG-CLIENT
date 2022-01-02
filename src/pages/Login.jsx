@@ -102,7 +102,7 @@ if(username && password) {
             type="password"
             onChange={(e) => setPassword(e.target.value)}
           />
-          <Button onClick={handleClick}>
+          <Button onClick={handleClick} disabled={isFetching}>
             LOGIN
           </Button>
           <Link>DO NOT YOU REMEMBER THE PASSWORD?</Link>
