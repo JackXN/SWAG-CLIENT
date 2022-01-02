@@ -18,7 +18,7 @@ const BASE_URL = process.env.REACT_APP_API_BASE_URL;
 const Products = ({ cat, filters, sort }) => {
   const [products, setProducts] = useState([]);
   const [filteredProducts, setFilteredProducts] = useState([]);
-
+//
   useEffect(() => {
     const getProducts = async () => {
       try {
