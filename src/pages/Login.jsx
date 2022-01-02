@@ -11,7 +11,7 @@ const Container = styled.div`
       rgba(255, 255, 255, 0.5),
       rgba(255, 255, 255, 0.5)
     ),
-    url("https://images.pexels.com/photos/6984650/pexels-photo-6984650.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940")
+    url("https://media.istockphoto.com/photos/asian-skateboarder-in-action-jump-in-the-air-picture-id1319645876?b=1&k=20&m=1319645876&s=170667a&w=0&h=O0vDRX43QT8N1A-9me_0Nh0_czOVZJfakL8-vrC-J5c=")
       center;
   background-size: cover;
   display: flex;
