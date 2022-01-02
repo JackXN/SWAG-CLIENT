@@ -9,7 +9,7 @@ import Slider from "../components/Slider";
 
 const Home = () => {
   return (
-    <div style={{background: 'black'}}>
+    <div style={{background: 'black', width: '100%'}}>
       <Announcement />
       <Navbar/>
       <Slider />
