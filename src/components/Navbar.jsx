@@ -5,7 +5,6 @@ import styled from "styled-components";
 import { mobile } from "../responsive";
 import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
-import Skate from '../images/SK801Logo.png'
 
 const Container = styled.div`
   height: 60px;
@@ -74,9 +73,6 @@ const MenuItem = styled.div`
   ${mobile({ fontSize: "12px", marginLeft: "10px" })}
 `;
 
-const Image = styled.img`
-height: 90%;
-`
 
 const Navbar = () => {
   const quantity = useSelector(state=>state.cart.quantity)
