@@ -93,13 +93,7 @@ const Navbar = () => {
          <Logo>SWAG</Logo>
         </Center>
 {user ? <Right>
-  <Link to="/cart">
-          <MenuItem>
-            <Badge badgeContent={quantity} color="secondary">
-              <ShoppingCartOutlined style={{color: 'white'}} />
-            </Badge>
-          </MenuItem>
-          </Link>
+  <h1>Hello</h1>
 </Right> :
         <Right>
           <MenuItem>REGISTER</MenuItem>

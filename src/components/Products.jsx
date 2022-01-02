@@ -26,7 +26,6 @@ const Products = ({ cat, filters, sort }) => {
           cat
             ? `${BASE_URL}/products?category=${cat}`
             : `${BASE_URL}/api/products`
-              
         );
         setProducts(res.data);
       } catch (err) {}
