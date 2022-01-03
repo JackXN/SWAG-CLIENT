@@ -84,16 +84,22 @@ const Navbar = () => {
       <Wrapper>
         <Left>
           <Language>EN</Language>
-          <SearchContainer>
+          {/* <SearchContainer>
             <Input placeholder="Search"/>
             <Search style={{ color: "gray", fontSize: 16 }} />
-          </SearchContainer>
+          </SearchContainer> */}
         </Left>
         <Center>
          <Logo>SWAG</Logo>
         </Center>
 {user ? <Right>
-  <h1>Hello</h1>
+  <Link to="/cart">
+          <MenuItem>
+            <Badge badgeContent={quantity} color="secondary">
+              <ShoppingCartOutlined style={{color: 'white'}} />
+            </Badge>
+          </MenuItem>
+          </Link>
 </Right> :
         <Right>
           <MenuItem>REGISTER</MenuItem>

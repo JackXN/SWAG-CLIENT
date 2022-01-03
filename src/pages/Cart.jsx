@@ -103,6 +103,11 @@ const PriceDetail = styled.div`
   justify-content: center;
 `;
 
+const Link = styled.a `
+text-decoration: none;
+color: black
+`
+
 const ProductAmountContainer = styled.div`
   display: flex;
   align-items: center;
@@ -189,7 +194,7 @@ const Cart = () => {
       <Wrapper>
         <Title>YOUR BAG</Title>
         <Top>
-          <TopButton>CONTINUE SHOPPING</TopButton>
+          <TopButton ><Link onClick={() => history.push('/')}>CONTINUE SHOPPING</Link></TopButton>
           <TopTexts>
             <TopText>Shopping Bag(2)</TopText>
             <TopText>Your Wishlist (0)</TopText>
