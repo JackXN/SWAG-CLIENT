@@ -90,7 +90,7 @@ const Navbar = () => {
           </SearchContainer> */}
         </Left>
         <Center>
-         <Logo>SWAG</Logo>
+         <Logo><Link to='/' style={{color:'white', textDecoration: 'none'}}>SWAG.</Link></Logo>
         </Center>
 {user ? <Right>
   <Link to="/cart">

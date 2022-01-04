@@ -84,11 +84,17 @@ const Payment = styled.img`
     width: 50%;
 `;
 
+
+const Link = styled.a`
+color: white;
+text-decoration: none;
+`
+
 const Footer = () => {
   return (
     <Container>
       <Left>
-        <Logo>SWAG</Logo>
+        <Logo><Link href='/'>SWAG.</Link></Logo>
         <Desc>
           There are many variations of passages of Lorem Ipsum available, but
           the majority have suffered alteration in some form, by injected
