@@ -32,7 +32,7 @@ export const sliderItems = [
     },
     {
       id: 2,
-      img: "https://www.bleed-clothing.com/media/product/1e4/ecoknit-skate-beanie-yellow-188.jpg",
+      img: "https://www.jaywatson.com/blog/wp-content/uploads/2011/10/Watson_110917_0204_w.jpg",
       title: "Headwear",
       cat:"headwear"
     },
