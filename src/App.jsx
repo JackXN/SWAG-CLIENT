@@ -4,7 +4,6 @@ import ProductList from "./pages/ProductList";
 import Register from "./pages/Register";
 import Login from "./pages/Login";
 import Cart from "./pages/Cart";
-import styled from "styled-components";
 import {
   BrowserRouter as Router,
   Switch,

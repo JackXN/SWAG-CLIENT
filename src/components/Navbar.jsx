@@ -76,18 +76,13 @@ const MenuItem = styled.div`
 
 const Navbar = () => {
   const quantity = useSelector(state=>state.cart.quantity)
-  const user = useSelector(state => state.user)
-  // const user = null
-  console.log(user)
+  // const user = useSelector(state => state.user)
+  const user = null;
   return (
     <Container>
       <Wrapper>
         <Left>
           <Language>EN</Language>
-          {/* <SearchContainer>
-            <Input placeholder="Search"/>
-            <Search style={{ color: "gray", fontSize: 16 }} />
-          </SearchContainer> */}
         </Left>
         <Center>
          <Logo><Link to='/' style={{color:'white', textDecoration: 'none'}}>SWAG.</Link></Logo>
@@ -102,9 +97,13 @@ const Navbar = () => {
           </Link>
 </Right> :
         <Right>
-          <MenuItem>REGISTER</MenuItem>
           <MenuItem>
-          <Link to='/login' style={{color: 'white', textDecoration: 'none'}}>SIGN IN</Link>
+          <Link to='/register' style={{color: 'white', textDecoration: 'none'}}>
+            Register
+          </Link>
+          </MenuItem>
+          <MenuItem>
+          <Link to='/login' style={{color: 'white', textDecoration: 'none'}}>Log in</Link>
           </MenuItem>
           <Link to="/cart">
           <MenuItem>

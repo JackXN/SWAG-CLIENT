@@ -10,10 +10,10 @@ const Container = styled.div`
   flex-wrap: wrap;
   justify-content: space-between;
 `;
-//s
 
 
-const BASE_URL = process.env.REACT_APP_API_BASE_URL;
+
+const BASE_URL = 'http://localhost:2000/api/';
 // const BASE_URL = 'http://localhost:5000'
 const Products = ({ cat, filters, sort }) => {
   const [products, setProducts] = useState([]);
